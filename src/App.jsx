@@ -1,9 +1,16 @@
+import Footer from "./components/Footer"
+import Hero from "./components/Hero"
+import Navbar from "./components/Navbar"
 
 function App() {
 
   return (
-    <div className="h-screen text-center flex flex-col justify-center">
-      <h1>Encuestas de reacciones para <span className="bg-sky-700 text-white font-semibold p-1" >LinkedIn</span></h1>
+    <div className="w-full flex flex-col items-center justify-center min-h-screen text-white overflow-hidden">
+      <main className="md:p-5 w-full flex-1 text-center">
+        <Navbar />
+        <Hero />
+      </main>
+      <Footer />
     </div>
   )
 }
