@@ -10,6 +10,22 @@
     font-family: 'Maven Pro', sans-serif;
   }
 
+  body::-webkit-scrollbar {
+    width: 8px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #0d1117;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: #C02425;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #F0CB35, #C02425);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #F0CB35, #C02425); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+       /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+  }
+
   @keyframes float {
     0% {
       transform: translateY(0px);
