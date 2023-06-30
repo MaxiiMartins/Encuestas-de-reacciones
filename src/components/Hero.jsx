@@ -82,7 +82,7 @@ const Hero = () => {
                     />
                 </h1>
                 <NavLink to="/generador">
-                <div className="heroElem cursor-pointer p-1 rounded-full gradientAnimado bg-gradient-to-r group hover:from-[#FF7170] hover:to-[#FFE57F] from-white to-white transition-colors duration-700  ease-in-out">
+                <div data-aos="zoom-in" data-aos-delay="800" className="heroElem cursor-pointer p-0.5 rounded-full gradientAnimado bg-gradient-to-r group hover:from-[#FF7170] hover:to-[#FFE57F] from-white to-white transition-colors duration-700  ease-in-out">
                     <div className="flex h-full w-full rounded-full items-center justify-center bg-[#0d1117]">
                         <h1 className="font-bold whitespace-nowrap z-0 px-8 py-4 text-xl text-transparent bg-clip-text bg-gradient-to-r group-hover:from-[#FF7170] group-hover:to-[#FFE57F] from-white to-white transition-colors duration-700  ease-in-out">Crear encuesta</h1>
                     </div>
