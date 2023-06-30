@@ -28,7 +28,7 @@ const MenuOptions = () => {
     }
 
     return (
-        <div className='flex flex-col w-[28%] max-w-sm gap-12 p-4 bg-transparent border-2 items-center border-white rounded-xl' >
+        <div className='flex flex-col w-[28%] max-w-sm gap-12 p-4 bg-transparent border-2 items-center border-orange-400/60 rounded-xl' >
             <div className="h-10 text-white bg-transparent mb-5 text-center">
                 <label htmlFor="value" className="block text-xl font-semibold text-gray-900 dark:text-gray-400">Titulo</label>
                 <input

@@ -5,7 +5,7 @@ const MenuReactions = () => {
     const claves = Object.keys(estados.reacciones)
 
     return (
-        <div className='flex flex-col gap-5 p-4 max-w-[450px] bg-transparent border-2 border-white rounded-xl' >
+        <div className='flex flex-col gap-5 p-4 max-w-[450px] bg-transparent border-2 border-orange-400/60 rounded-xl' >
             <label className="block text-xl min-[1400px]:text-2xl text-center font-semibold text-gray-900 dark:text-gray-400">Reacciones</label>
             <div className='flex flex-wrap gap-2 my-2 justify-center '>
                 {
