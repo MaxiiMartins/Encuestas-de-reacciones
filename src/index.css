@@ -26,6 +26,20 @@
     border-radius: 20px;       /* roundness of the scroll thumb */
   }
 
+  .check-box-1:checked ~ .check-1{
+    @apply opacity-100;
+    animation: check-animated 0.5s 1;
+  }
+
+  @keyframes check-animated{
+    0%,100%{
+      @apply transform scale-100;
+    }
+    50%{
+      @apply transform scale-150 opacity-0;
+    }
+  }
+
   @keyframes float {
     0% {
       transform: translateY(0px);
@@ -59,4 +73,21 @@
     z-index: 10;
     min-width: 70px;
   }
+  .gradientAnimado{
+    background-size: 300% 300%;
+    animation: gradient 2s ease-in-out infinite;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
 }

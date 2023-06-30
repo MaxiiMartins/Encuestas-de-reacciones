@@ -4,17 +4,17 @@ import encantar from "../assets/encantar.svg"
 import interesar from "../assets/interesar.svg"
 import hacer_gracia from "../assets/hacer_gracia.svg"
 import recomendar from "../assets/recomendar.svg"
+import { NavLink } from "react-router-dom"
 
 const Hero = () => {
 
     return (
         <>
-            <div
-                className="relative w-full border-t-2 border-[#161B22] overflow-hidden text-white pt-20 pb-40 m-auto flex justify-center text-center flex-col items-center z-1">
+            <div className="relative w-full border-t-2 border-[#161B22] overflow-hidden text-white pt-20 pb-40 m-auto mb-28 flex justify-center text-center flex-col items-center z-1">
                 <p className="heroElem text-lg font-medium pt-6 mb-4 z-10 text-transparent bg-clip-text bg-gradient-to-r from-[#FF7170] to-[#FFE57F]"
                         >Potencia tu alcance en <span className="font-semibold text-white" >Linked<span className="bg-sky-700 rounded text-white font-semibold px-1 ml-0.5" >In</span> </span> con encuestas de reacción</p>
                 <h1 className="heroElem inline-block z-10 max-w-md lg:max-w-2xl relative text-5xl md:text-4xl lg:text-5xl tracking-tighter mb-10 font-bold heroElem">
-                    ¡Crea experiencias <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF7170] to-[#FFE57F]" > interactivas </span>  y obtén <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF7170] to-[#FFE57F]" >valiosos</span> comentarios de tu audiencia!
+                    ¡Crea experiencias <span className="text-transparent bg-clip-text bg-gradient-to-r gradientAnimado from-[#FF7170] to-[#FFE57F]" style={{animationDuration:"5s"}} > interactivas </span>  y obtén <span style={{animationDuration:"5s"}} className="text-transparent bg-clip-text gradientAnimado bg-gradient-to-r from-[#FF7170] to-[#FFE57F]" >valiosos</span> comentarios de tu audiencia!
                     <img
                         draggable={false}
                         className="reacciones w-16 top-[-80%] right-[5%] sm:top-[-90%] -z-0 sm:right-[170px]"
@@ -81,11 +81,13 @@ const Hero = () => {
                         src={recomendar}
                     />
                 </h1>
-                <div className="heroElem cursor-pointer p-0.5 rounded-full bg-gradient-to-r group hover:from-[#FF7170] hover:to-[#FFE57F] from-white to-white transition-colors duration-700  ease-in-out">
+                <NavLink to="/generador">
+                <div className="heroElem cursor-pointer p-1 rounded-full gradientAnimado bg-gradient-to-r group hover:from-[#FF7170] hover:to-[#FFE57F] from-white to-white transition-colors duration-700  ease-in-out">
                     <div className="flex h-full w-full rounded-full items-center justify-center bg-[#0d1117]">
                         <h1 className="font-bold whitespace-nowrap z-0 px-8 py-4 text-xl text-transparent bg-clip-text bg-gradient-to-r group-hover:from-[#FF7170] group-hover:to-[#FFE57F] from-white to-white transition-colors duration-700  ease-in-out">Crear encuesta</h1>
                     </div>
                 </div>
+                </NavLink>
             </div>
         </>
     )
