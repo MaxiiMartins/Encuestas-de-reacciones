@@ -7,7 +7,7 @@ import Aos from 'aos'
 const Layout = () => {
 
   useEffect(() => {
-    Aos.init()
+    Aos.init({duration:700})
   }, [])
 
 
