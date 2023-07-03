@@ -10,7 +10,7 @@ export const useRecciones = () => {
 
 // eslint-disable-next-line react/prop-types
 const ContextProvider = ({ children }) => {
-  const [reacciones, setReacciones] = useState(options);
+  const [reacciones, setReacciones] = useState(structuredClone(options));
   const [titulo, setTitulo] = useState('¿Quien es tu favorito?')
   const [textoColor, setTextoColor] = useState("text-white")
   const [fondoColor, setFondoColor] = useState('#FFFFFF')
@@ -32,6 +32,15 @@ const ContextProvider = ({ children }) => {
         break;
     }
   }
+
+  const resetearReaccion = () =>{
+    setReacciones(structuredClone(options))
+    setTitulo('¿Quien es tu favorito?')
+    setTextoColor("text-white")
+    setFondoColor('#FFFFFF')
+    setAlinearReaccion('justify-end')
+  } 
+
   const modificarReaccion = (reaccion, clave, valor) => {
 
     if (clave == "isShowing") {
@@ -51,6 +60,7 @@ const ContextProvider = ({ children }) => {
     setReacciones(nuevoEstado)
   }
 
+
   return (
     <ReccionesContext.Provider value={{
       estados: {
@@ -62,7 +72,8 @@ const ContextProvider = ({ children }) => {
       },
       metodos: {
         modificarReaccion,
-        modificarOpciones
+        modificarOpciones,
+        resetearReaccion
       }
     }}>
       {children}
