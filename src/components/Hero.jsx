@@ -12,9 +12,9 @@ const Hero = () => {
         <>
             <div className="relative w-full border-t-2 border-[#161B22] overflow-hidden text-white pt-20 pb-40 m-auto mb-28 flex justify-center text-center flex-col items-center z-1">
                 <p className="heroElem text-lg font-medium pt-6 mb-4 z-10 text-transparent bg-clip-text bg-gradient-to-r from-[#FF7170] to-[#FFE57F]"
-                        >Potencia tu alcance en <span className="font-semibold text-white" >Linked<span className="bg-sky-700 rounded text-white font-semibold px-1 ml-0.5" >In</span> </span> con encuestas de reacción</p>
+                >Potencia tu alcance en <span className="font-semibold text-white" >Linked<span className="bg-sky-700 rounded text-white font-semibold px-1 ml-0.5" >In</span> </span> con encuestas de reacciónes</p>
                 <h1 className="heroElem inline-block z-10 max-w-md lg:max-w-2xl relative text-5xl md:text-4xl lg:text-5xl tracking-tighter mb-10 font-bold heroElem">
-                    ¡Crea experiencias <span className="text-transparent bg-clip-text bg-gradient-to-r gradientAnimado from-[#FF7170] to-[#FFE57F]" style={{animationDuration:"5s"}} > interactivas </span>  y obtén <span style={{animationDuration:"5s"}} className="text-transparent bg-clip-text gradientAnimado bg-gradient-to-r from-[#FF7170] to-[#FFE57F]" >valiosos</span> comentarios de tu audiencia!
+                    ¡Crea experiencias <span className="text-transparent bg-clip-text bg-gradient-to-r gradientAnimado from-[#FF7170] to-[#FFE57F]" style={{ animationDuration: "5s" }} > interactivas </span>  y obtén <span style={{ animationDuration: "5s" }} className="text-transparent bg-clip-text gradientAnimado bg-gradient-to-r from-[#FF7170] to-[#FFE57F]" >valiosos</span> comentarios de tu audiencia!
                     <img
                         draggable={false}
                         className="reacciones w-16 top-[-80%] right-[5%] sm:top-[-90%] -z-0 sm:right-[170px]"
@@ -82,11 +82,11 @@ const Hero = () => {
                     />
                 </h1>
                 <NavLink to="/generador">
-                <div data-aos="zoom-in" data-aos-delay="800" className="heroElem cursor-pointer p-0.5 rounded-full gradientAnimado bg-gradient-to-r group hover:from-[#FF7170] hover:to-[#FFE57F] from-white to-white transition-colors duration-700  ease-in-out">
-                    <div className="flex h-full w-full rounded-full items-center justify-center bg-[#0d1117]">
-                        <h1 className="font-bold whitespace-nowrap z-0 px-8 py-4 text-xl text-transparent bg-clip-text bg-gradient-to-r group-hover:from-[#FF7170] group-hover:to-[#FFE57F] from-white to-white transition-colors duration-700  ease-in-out">Crear encuesta</h1>
+                    <div className="heroElem cursor-pointer md:p-[2.5px] p-0.5 rounded-full group bg-gradient-to-r from-[#FF7170] to-[#FFE57F] transition-colors duration-900 ease-in-out">
+                        <div className="flex h-full w-full rounded-full items-center justify-center bg-[#0d1117] group-hover:bg-[#0d1117]/90 transition-opacity duration-900 ease-in-out">
+                            <h1 className="font-bold whitespace-nowrap z-0 px-8 py-4 text-xl text-transparent bg-clip-text bg-gradient-to-r hover:from-[#FF7170] hover:to-[#FFE57F] from-white to-white transition-colors duration-900 ease-in-out">Crear encuesta</h1>
+                        </div>
                     </div>
-                </div>
                 </NavLink>
             </div>
         </>
