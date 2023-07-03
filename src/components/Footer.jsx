@@ -6,7 +6,8 @@ const Footer = () => {
             <div className="w-full mt-8 pt-8 sm:mt-4 sm:pt-4 text-center border-[#161B22] border-t-2 ">
                 <span className="flex flex-col items-center justify-center ">
                     <div className="mt-1 font-medium text-sm text-white/80">
-                        Realizado por <a href="mailto:maximartins45@gmail.com" className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF7170] to-[#FFE57F] font-bold">Maxi Martins</a>
+                        Realizado por <a href="https://github.com/MaxiiMartins" target='_blank'  className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF7170] to-[#FFE57F] font-bold" rel="noreferrer">Maxi Martins </a> 
+                        &copy; {new Date().getUTCFullYear()}
                     </div>
                 </span>
             </div>
